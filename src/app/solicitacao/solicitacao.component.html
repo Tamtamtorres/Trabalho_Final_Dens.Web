@@ -1,0 +1,68 @@
+
+
+<div id="container">
+   
+    <mat-form-field class="example-full-width">
+      <mat-label>Professor</mat-label>
+      <input id="professor" matInput #message maxlength="256" [(ngModel)]="professor">
+      <mat-hint align="end"></mat-hint>
+    </mat-form-field>
+ 
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Aluno</mat-label>
+      <input id="aluno" matInput #message maxlength="256" [(ngModel)]="aluno" >
+      <mat-hint align="end"></mat-hint>
+    </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Turma</mat-label>
+    <select id="turma" matNativeControl  [(ngModel)]="turma">
+      <option value="" selected></option>
+      <option value="Subsequente">Subsequente</option>
+      <option value="1° Ano">1° Ano </option>
+      <option value="2° Ano">2° Ano </option>
+      <option value="3° Ano">3° Ano </option>
+    </select>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Sala</mat-label>
+    <select id="sala" matNativeControl [(ngModel)]="sala">
+      <option value="" selected></option>
+      <option value="Laboratório 1">Laboratório 1</option>
+      <option value="Laboratório 2" >Laboratório 2</option>
+      <option value="Laboratório Robótica">Laboratório Robótica</option>
+      <option value="1° Ano A">1° Ano A</option>
+      <option value="1° Ano B">1° Ano B</option>
+      <option value="1° Ano C">1° Ano C</option>
+      <option value="2° Ano A">2° Ano A</option>
+      <option value="2° Ano B">2° Ano B</option>
+      <option value="2° Ano C">2° Ano C</option>
+      <option value="3° Ano A">3° Ano A</option>
+    </select>
+  </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Data</mat-label>
+      <input id="data" type="date" matInput #message maxlength="256" [(ngModel)]="data">
+      <mat-hint align="end"></mat-hint>
+    </mat-form-field>
+ 
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Horário</mat-label>
+      <input id="horario" type="time" matInput #message maxlength="256" [(ngModel)]="horario">
+      <mat-hint align="end"></mat-hint>
+    </mat-form-field>
+ 
+
+
+    <button mat-flat-button id="b2" type="submit" (click)="onSubmit()">Submit</button>
+
+<br>
+ 
+  <button routerLink="reservas" mat-flat-button id="b2">Tela de Reservas</button>
+
+</div>
+

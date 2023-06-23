@@ -1,0 +1,23 @@
+.topo{
+    background-color: rgb(61, 121, 252);
+}
+.titulo{
+    color: aliceblue;
+}
+.botao{
+    background-color: rgb(61, 121, 252);
+    color: aliceblue;
+    
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 90%;
+}
+#b2{
+    background-color: rgb(61, 121, 252);
+    color: aliceblue;
+}
